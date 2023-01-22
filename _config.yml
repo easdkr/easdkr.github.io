@@ -1,43 +1,26 @@
 # Site
 repository: Git repository where your resume will be hosted, only required if you are hosting on GitHub (eg. sproogen/modern-resume-theme)
-# favicon: Directory of your favicon (eg. images/favicon.ico)(optional)
+favicon: images/favicon.png
 
 # Content configuration version
 version: 2
 
 # Personal info
-name: Your Name
-title: Your job title
-email: Your email (optional)
-# email_title: Email (Email title override)
-phone: Your phone number (optional)
-# phone_title: Phone (Phone title override)
-website: Your website (eg. https://google.com)(optional)
-# website_title: Web (Website title override)
+name: 최승준
+title: Backend Engineer
+email: choie0423@naver.com
 
 # Dark Mode (true/false/never)
 darkmode: false
 
 # Social links
-twitter_username: jekyllrb
-github_username:  jekyll
-stackoverflow_username: "00000001"
-dribbble_username: jekyll
-facebook_username: jekyll
-flickr_username: jekyll
-instagram_username: jekyll
-linkedin_username: jekyll
-xing_username: jekyll
-pinterest_username: jekyll
-youtube_username: jekyll
-orcid_username: 0000-0000-0000-0000
-googlescholar_username: D847cGsAAAAJ
+github_username:  easdkr
 
 # Additional icon links
-additional_links:
-- title: Link name
-  icon: Font Awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&s=brands&m=free)
-  url: Link url (eg. https://google.com)
+# additional_links:
+# - title: Link name
+#   icon: Font Awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&s=brands&m=free)
+#   url: Link url (eg. https://google.com)
 # - title: another link
 #   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&s=brands&m=free)
 #   url: Link url (eg. https://google.com)
@@ -50,69 +33,120 @@ additional_links:
 
 # About Section
 # about_title: About Me (Use this to override about section title)
-about_profile_image: Directory of profile image (eg. images/profile.jpg)
+about_profile_image: images/profile.png
 about_content: | # this will include new lines to allow paragraphs
-  Write an awesome description about yourself here, this supports markdown, so you can add [links](http://foobar.com) and highlight things <mark>like this</mark>.
+  더 좋은 서비스를 만들기 위해 비즈니스 도메인을 이해하려 노력하고, 나의 성장이 팀의 성장, 더 나아가 더 좋은 서비스의 성장으로 이끌 수 있도록 지속적으로 학습하고 노력하는 백엔드 개발자입니다.
+  
+  - <span style="font-size: 1.3rem"><span style="text-decoration: underline;">**함께 성장하기 위해 노력하는 사람들과 일하는 것을 좋아합니다.**</span> 나만의 성장보다는 팀 전체가 성장할 수 있도록 지속적으로 사내 스터디를 진행해오고 있습니다.</span>
 
-  You can even add paragraphs by using empty lines like this and add anything else [markdown](https://www.markdownguide.org/getting-started#what-is-markdown) supports such as
-    - Lists
-    - Tables
-    - <a href="google.com">Links</a>
-    - Images ![alt text](/images/landscape-trees.jpg "Trees")
+  - <span style="font-size: 1.3rem"><span style="text-decoration: underline;">**더 나은 개발 문화를 만들기 위해 노력합니다.**</span> 
+  모두가 동등한 입장에서 진행하는 코드리뷰 도입을 통해 다 같이 시나리오를 검증하고 서로의 코드를 이해하기 위해 노력하여 "우리 팀의 클린 코드"를 만드는 문화를 지향합니다.</span>
+
+  - <span style="font-size: 1.3rem"><span style="text-decoration: underline;">**다양한 영역의 경험을 통해 더 나은 설계를 항상 고민합니다.**</span> Mobile app, Web Front-end 등 다양한 영역의 경험을 통해 항상 모두를 만족시킬 수 있는 설계를 하기 위해 노력합니다.</span>
 
 content:
-  - title: Projects # Title for the section
+  - title: Career
+    layout: list
+    content:
+      - layout: left
+        title: 알파서클
+        sub_title: 솔루션 및 서비스 개발
+        link: https://alphacircle.co.kr
+        caption: 2021.01 ~ 현재
+        description: | # this will include new lines to allow paragraphs
+          ## [Vroadway](https://play.google.com/store/apps/details?id=com.alphacircle.vroadway&hl=ko&gl=US&pli=1)
+          <span style="font-size: 1.2rem; font-style: oblique;">360 VR 공연/전시 영상 서비스</span>
+          
+          Backend
+          - 개발 생산성 증가를 위해 flask(python) 기반의 백엔드를 nest.js(typescript) 로 마이그레이션
+          - 서비스 확장을 염두한 개선 아키텍처 설계
+          - jest와 supertest 기반의 unit, e2e 테스트 도입
+          - github action 기반의 CI pipeline 구축
+          - aws code deploy와 ECS 기반의 CD pipeline 구축 (예정)
+          
+          Frontend
+          - 개발 생산성 증가를 위해 Angular(Typescript) 기반의 어드민을 React(Typescript) 로 마이그레이션
+          - 재사용성을 위한 컴포넌트 구조 설계 및 개발
+
+          ---
+
+          ## [신비아파트 VR뮤지컬](https://play.google.com/store/apps/details?id=com.shinbimusicalwadiz&hl=ko&gl=US)
+          <span style="font-size: 1.2rem; font-style: oblique;">신비아파트 뮤지컬 VR 영상 서비스</span>
+          - 레거시 기반의 CMS 서버 및 어드민 페이지 배포
+          - react native 기반의 모바일 앱 UI 기능 추가 및 개선
+          
+          ---
+          
+          ## [사내 VR 플레이어 솔루션 개발](https://www.youtube.com/watch?v=JfWsRtJclGk&t=2s)
+          <span style="font-size: 1.2rem; font-style: oblique;">360 VR 초고화질 플레이어</span>
+          - android exoplayer codec library 기반의 코덱 호환 검증 및 해상도 검증 라이브러리 개발
+          - 구 버전의 exoplayer 기반의 레거시 솔루션을 신규 버전의 exoplayer 로 마이그레이션 및 개선 
+          - 확장이 힘들었던 레거시 솔루션 코드를 다형성 기반의 코드로 변경하여 확장에 용이하도록 개선
+
+  - title: Skills # Title for the section
     layout: list # Type of content section (list/text)
     content:
       - layout: left
-        border: weak  # Value of `weak` will display a weak border below this item. # Any 
-                      # other value (or no value) means no border will be displayed
-        title: Project name
-        link: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
-        link_text: Link Text
-        additional_links:
-          - title:  Github page for project (eg. sproogen/modern-resume-theme)
-            icon: fab fa-github
-            url: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
-          - title:  Github page for project (eg. sproogen/modern-resume-theme)
-            icon: fab fa-github
-            url: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
+        title: 'Backend'
         quote: >
-          Short overview of the project (optional)
+          현재 사용중이거나 사용했던 기술들입니다. (밑줄은 현재 주로 사용중인 기술을 의미합니다.) 
         description: | # this will include new lines to allow paragraphs
-          Description about the work on/with the project
-  - title: Experience
-    layout: list
-    content:
-      - layout: right
-        title: Company name
-        sub_title: Job title
-        caption: Date Range (eg. November 2016 - present)
-        link: Link to company (optional)
-        quote: >
-          Short description of the company (optional)
+          - <span style="text-decoration: underline;">typescript(node.js)</span>, python3
+          - <span style="text-decoration: underline;">nest.js</span>, flask
+          - <span style="text-decoration: underline;">typeORM</span>, <span style="text-decoration: underline;">prisma</span>, sqlalchemy 
+          - <span style="text-decoration: underline;">jest</span>, <span style="text-decoration: underline;">supertest</span>
+          - celery 
+      - layout: left
+        title: 'Infra'
         description: | # this will include new lines to allow paragraphs
-          Description of role
+          - <span style="text-decoration: underline;">docker</span>
+          - <span style="text-decoration: underline;">aws ec2</span>, <span style="text-decoration: underline;">aws ecs</span>, <span style="text-decoration: underline;">aws rds</span>
+          - <span style="text-decoration: underline;">aws s3</span>, <span style="text-decoration: underline;">aws cloudfront</span>
+          - <span style="text-decoration: underline;">github action</span>, <span style="text-decoration: underline;">aws codedeploy</span>
+      - layout: left
+        title: 'Frontend'
+        description: | # this will include new lines to allow paragraphs
+          - <span style="text-decoration: underline;">typescript</span>, <span style="text-decoration: underline;">jsx(tsx)</span>, rxjs
+          - <span style="text-decoration: underline;">react</span>, angular
+          - <span style="text-decoration: underline;">MUI</span>, angular/material
+          - <span style="text-decoration: underline;">redux-toolkit</span>, <span style="text-decoration: underline;">recoil</span>
+          - <span style="text-decoration: underline;">storybook/react</span>
+          - vite, webpack
+      - layout: left
+        title: 'Mobile'
+        description: |
+          - <span style="text-decoration: underline;">typescript</span>, <span style="text-decoration: underline;">jsx(tsx)</span>, java, kotlin
+          - <span style="text-decoration: underline;">react native</span>, android native
+          - <span style="text-decoration: underline;">recoil</span>
   - title: Education
     layout: list
     content:
-      - layout: top-right
-        title: Institution name
-        sub_title: Qualifications (eg. BA Performing Arts)
-        caption: Date Range (eg. 2016 - 2019)
-        quote: >
-          Short institution or course description (optional)
+      - layout: left
+        title: 금오공과대학교
+        caption: 2012 - 2019
         description: | # this will include new lines to allow paragraphs
-          Description of qualification
+          컴퓨터공학과 (학사 졸업)
+  - title: Paper
+    layout: text 
+    content: |  
+        [Watch & Do: A Smart IoT Interaction System with Object Detection and Gaze Estimation](https://ieeexplore.ieee.org/document/8634883/)\
+        <span style="font-size: 1.2rem; font-style: oblique; color:#636161;">(IEEE Transactions on Consumer Electronics, Vol 65, Issue 2, May, 2019 (Early Access))</span>
   - title: A Little More About Me
-    layout: text
-    content: | # this will include new lines to allow paragraphs
-      This is where you can write a little more about yourself. You could title this section **Interests** and include some of your other interests.
-
-      Or you could title it **Skills** and write a bit more about things that make you more desirable, like *leadership* or *teamwork*
-
+    layout: list
+    content:  # this will include new lines to allow paragraphs
+      - layout: left
+        title: Study
+        description: |
+          - [clean code (로버트 C. 마틴)](https://github.com/alphacircle-service/clean-code-seminar) 사내 세미나 진행
+          - clean architecture (로버트 C. 마틴), Unit Testing (블라디미르 코리코프) 독서 모임 진행 
+          - [만들면서 배우는 헥사고날 아키텍처 설계와 구현(다비 비에이라) with Typescript](https://github.com/easdkr/hexagonal-architecture-with-typescript) 스터디 진행 
+      - layout: left
+        title: ETC
+        description: |
+          - 사내 솔루션용 git repository (Gitlab) 구축
+          - 신규 입사 개발자를 위한 온보딩 프로세스 구축 
 # Footer
-footer_show_references: true
+footer_show_references: false
 # references_title: References on request (Override references text)
 
 # Build settings
