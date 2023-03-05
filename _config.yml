@@ -58,21 +58,27 @@ content:
           <span style="font-size: 1.2rem; font-style: oblique;">360 VR 공연/전시 영상 서비스</span>
           
           Backend
+          - **main skills: nest.js, typeorm, postgresql** 
           - 개발 생산성 증가를 위해 flask(python) 기반의 백엔드를 nest.js(typescript) 로 마이그레이션
           - 서비스 확장을 염두한 개선 아키텍처 설계
+          - Database entity 구조 개선
           - jest와 supertest 기반의 unit, e2e 테스트 도입
           - github action 기반의 CI pipeline 구축
           - aws code pipeline과 ECS 기반의 CD pipeline 구축
           
           Frontend
+          - **main skills: react**
           - 개발 생산성 증가를 위해 Angular(Typescript) 기반의 어드민을 React(Typescript) 로 마이그레이션
           - 재사용성을 위한 컴포넌트 구조 설계 및 개발
-
+          - 컴포넌트 기반 개발을 위한 storybook 도입
+          
+          
           - 참고 링크 : [회고](https://github.com/easdkr/Vroadway-v2-api-server-retrospect)
           ---
 
           ## [신비아파트 VR뮤지컬](https://play.google.com/store/apps/details?id=com.shinbimusicalwadiz&hl=ko&gl=US)
           <span style="font-size: 1.2rem; font-style: oblique;">신비아파트 뮤지컬 VR 영상 서비스</span>
+          - **main skills: flask, angular, react-native, aws**
           - 레거시 기반의 CMS 서버 및 어드민 페이지 배포
           - react native 기반의 모바일 앱 UI 기능 추가 및 개선
           
@@ -80,13 +86,14 @@ content:
           
           ## [사내 VR 플레이어 솔루션 개발](https://www.youtube.com/watch?v=JfWsRtJclGk&t=2s)
           <span style="font-size: 1.2rem; font-style: oblique;">360 VR 초고화질 플레이어</span>
+          - **main skills: android native(kotlin, java), exoplayer**
           - android exoplayer codec library 기반의 코덱 호환 검증 및 해상도 검증 라이브러리 개발
           - 구 버전의 exoplayer 기반의 레거시 솔루션을 신규 버전의 exoplayer 로 마이그레이션 및 개선 
           - 확장이 힘들었던 레거시 솔루션 코드를 다형성 기반의 코드로 변경하여 확장에 용이하도록 개선
 
          ---
          
-         ## ECS
+         ## culture
          - 테스트 코드를 작성하는 문화 도입
          - github PR 기반의 코드 리뷰 문화 도입
          - 사내 스터디 그룹 문화 도입 
