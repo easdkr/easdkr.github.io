@@ -58,28 +58,28 @@ content:
           <span style="font-size: 1.2rem; font-style: oblique;">360 VR 공연/전시 영상 서비스</span>
           
           Backend
-          - **main skills: nest.js, typeorm, postgresql** 
+          - **main skills: nest.js, typeorm, postgresql, aws** 
           - 개발 생산성 증가를 위해 flask(python) 기반의 백엔드를 nest.js(typescript) 로 마이그레이션
           - 서비스 확장을 염두한 개선 아키텍처 설계
-          - Database entity 구조 개선
           - jest와 supertest 기반의 unit, e2e 테스트 도입
           - github action 기반의 CI pipeline 구축
           - aws code pipeline과 ECS 기반의 CD pipeline 구축
-          
+          - database entity 구조 개선
+
           Frontend
-          - **main skills: react**
+          - **main skills: react, MUI, redux-toolkit**
           - 개발 생산성 증가를 위해 Angular(Typescript) 기반의 어드민을 React(Typescript) 로 마이그레이션
           - 재사용성을 위한 컴포넌트 구조 설계 및 개발
           - 컴포넌트 기반 개발을 위한 storybook 도입
-          
-          
+
           참고
-          - [회고](https://github.com/easdkr/Vroadway-v2-api-server-retrospect)
+          - [vroadway-v2 회고](https://github.com/easdkr/Vroadway-v2-api-server-retrospect)
+
           ---
 
           ## [신비아파트 VR뮤지컬](https://play.google.com/store/apps/details?id=com.shinbimusicalwadiz&hl=ko&gl=US)
           <span style="font-size: 1.2rem; font-style: oblique;">신비아파트 뮤지컬 VR 영상 서비스</span>
-          - **main skills: flask, angular, react-native, aws**
+          - **main skills: flask, angular, postgresql, aws**
           - 레거시 기반의 CMS 서버 및 어드민 페이지 배포
           - react native 기반의 모바일 앱 UI 기능 추가 및 개선
           
@@ -87,53 +87,53 @@ content:
           
           ## [사내 VR 플레이어 솔루션 개발](https://www.youtube.com/watch?v=JfWsRtJclGk&t=2s)
           <span style="font-size: 1.2rem; font-style: oblique;">360 VR 초고화질 플레이어</span>
-          - **main skills: android native(kotlin, java), exoplayer**
-          - android exoplayer codec library 기반의 코덱 호환 검증 및 해상도 검증 라이브러리 개발
+          - **main skills: android native(java, kotlin)**
+          - android exoplayer codec library 기반의 **코덱 호환 검증 및 해상도 검증 자동화 라이브러리** 개발
           - 구 버전의 exoplayer 기반의 레거시 솔루션을 신규 버전의 exoplayer 로 마이그레이션 및 개선 
           - 확장이 힘들었던 레거시 솔루션 코드를 다형성 기반의 코드로 변경하여 확장에 용이하도록 개선
 
-         ---
-         
-         ## culture
-         - 테스트 코드를 작성하는 문화 도입
-         - github PR 기반의 코드 리뷰 문화 도입
-         - 사내 스터디 그룹 문화 도입 
-         
   - title: Skills # Title for the section
     layout: list # Type of content section (list/text)
     content:
       - layout: left
         title: 'Backend'
-        quote: >
-          현재 사용중이거나 사용했던 기술들입니다. (밑줄은 현재 주로 사용중인 기술을 의미합니다.) 
         description: | # this will include new lines to allow paragraphs
-          - <span style="text-decoration: underline;">typescript(node.js)</span>, python3
-          - <span style="text-decoration: underline;">nest.js</span>, flask
-          - <span style="text-decoration: underline;">typeORM</span>, <span style="text-decoration: underline;">prisma</span>, sqlalchemy 
-          - <span style="text-decoration: underline;">jest</span>, <span style="text-decoration: underline;">supertest</span>
-          - celery 
+          - typescript(node.js)
+          - nest.js
+          - typeORM
+          - jest, supertest
+         
       - layout: left
         title: 'Infra'
         description: | # this will include new lines to allow paragraphs
-          - <span style="text-decoration: underline;">docker</span>, <span style="text-decoration: underline;">aws ecr</span>
-          - <span style="text-decoration: underline;">aws ec2</span>, <span style="text-decoration: underline;">aws alb</span>, <span style="text-decoration: underline;">aws route53</span>, <span style="text-decoration: underline;">aws ecs</span>, <span style="text-decoration: underline;">aws rds</span>
-          - <span style="text-decoration: underline;">aws s3</span>, <span style="text-decoration: underline;">aws cloudfront</span>
-          - <span style="text-decoration: underline;">github action</span>, <span style="text-decoration: underline;">aws codedeploy</span>, <span style="text-decoration: underline;">aws code build</span>, <span style="text-decoration: underline;">aws codepipeline</span>
+          - docker, aws ecr, aws ecs
+          - aws ec2, aws alb, aws rds, aws s3
+          - aws route53, aws cloudfront
+          - github action, aws codepipeline, aws codedeploy, aws codebuild
       - layout: left
         title: 'Frontend'
         description: | # this will include new lines to allow paragraphs
-          - <span style="text-decoration: underline;">typescript</span>, <span style="text-decoration: underline;">jsx(tsx)</span>, rxjs
-          - <span style="text-decoration: underline;">react</span>, angular
-          - <span style="text-decoration: underline;">MUI</span>, angular/material
-          - <span style="text-decoration: underline;">redux-toolkit</span>, <span style="text-decoration: underline;">recoil</span>
-          - <span style="text-decoration: underline;">storybook/react</span>
+          - typescript(javascript), jsx(tsx)
+          - react
+          - MUI
+          - redux-toolkit
+          - storybook/react
           - vite, webpack
       - layout: left
         title: 'Mobile'
         description: |
-          - <span style="text-decoration: underline;">typescript</span>, <span style="text-decoration: underline;">jsx(tsx)</span>, java, kotlin
-          - <span style="text-decoration: underline;">react native</span>, android native
-          - <span style="text-decoration: underline;">recoil</span>
+          - typescript(javascript), jsx(tsx), java, kotlin
+          - react native, android native
+          - recoil
+      - layout: left
+        title: 'ECS'
+        description: |
+          (main skill은 아니지만 운영/스터디를 통해 사용해본 기술입니다.)
+          - python3, java, kotlin
+          - flask, angular
+          - prisma, flask-sqlalchemy, rxjs, angular/material, styled-component
+          - celery 
+
   - title: Education
     layout: list
     content:
