@@ -68,6 +68,7 @@ content:
           - 개발 생산성 증가를 위해 Angular(Typescript) 기반의 어드민을 React(Typescript) 로 마이그레이션
           - 재사용성을 위한 컴포넌트 구조 설계 및 개발
 
+          - 참고 링크 : [회고](https://github.com/easdkr/Vroadway-v2-api-server-retrospect)
           ---
 
           ## [신비아파트 VR뮤지컬](https://play.google.com/store/apps/details?id=com.shinbimusicalwadiz&hl=ko&gl=US)
