@@ -84,6 +84,13 @@ content:
           - 구 버전의 exoplayer 기반의 레거시 솔루션을 신규 버전의 exoplayer 로 마이그레이션 및 개선 
           - 확장이 힘들었던 레거시 솔루션 코드를 다형성 기반의 코드로 변경하여 확장에 용이하도록 개선
 
+         ---
+         
+         ## ECS
+         - 테스트 코드를 작성하는 문화 도입
+         - github PR 기반의 코드 리뷰 문화 도입
+         - 사내 스터디 그룹 문화 도입 
+         
   - title: Skills # Title for the section
     layout: list # Type of content section (list/text)
     content:
@@ -100,10 +107,10 @@ content:
       - layout: left
         title: 'Infra'
         description: | # this will include new lines to allow paragraphs
-          - <span style="text-decoration: underline;">docker</span>
-          - <span style="text-decoration: underline;">aws ec2</span>, <span style="text-decoration: underline;">aws ecs</span>, <span style="text-decoration: underline;">aws rds</span>
+          - <span style="text-decoration: underline;">docker</span>, <span style="text-decoration: underline;">aws ecr</span>
+          - <span style="text-decoration: underline;">aws ec2</span>, <span style="text-decoration: underline;">aws alb</span>, <span style="text-decoration: underline;">aws route53</span>, <span style="text-decoration: underline;">aws ecs</span>, <span style="text-decoration: underline;">aws rds</span>
           - <span style="text-decoration: underline;">aws s3</span>, <span style="text-decoration: underline;">aws cloudfront</span>
-          - <span style="text-decoration: underline;">github action</span>, <span style="text-decoration: underline;">aws codedeploy</span>
+          - <span style="text-decoration: underline;">github action</span>, <span style="text-decoration: underline;">aws codedeploy</span>, <span style="text-decoration: underline;">aws code build</span>, <span style="text-decoration: underline;">aws codepipeline</span>
       - layout: left
         title: 'Frontend'
         description: | # this will include new lines to allow paragraphs
