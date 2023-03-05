@@ -62,7 +62,7 @@ content:
           - 서비스 확장을 염두한 개선 아키텍처 설계
           - jest와 supertest 기반의 unit, e2e 테스트 도입
           - github action 기반의 CI pipeline 구축
-          - aws code deploy와 ECS 기반의 CD pipeline 구축 (예정)
+          - aws code pipeline과 ECS 기반의 CD pipeline 구축
           
           Frontend
           - 개발 생산성 증가를 위해 Angular(Typescript) 기반의 어드민을 React(Typescript) 로 마이그레이션
@@ -144,7 +144,6 @@ content:
         title: ETC
         description: |
           - 사내 솔루션용 git repository (Gitlab) 구축
-          - 신규 입사 개발자를 위한 온보딩 프로세스 구축 
 # Footer
 footer_show_references: false
 # references_title: References on request (Override references text)
