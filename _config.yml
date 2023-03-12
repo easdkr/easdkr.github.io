@@ -79,7 +79,7 @@ content:
 
           ## [신비아파트 VR뮤지컬](https://play.google.com/store/apps/details?id=com.shinbimusicalwadiz&hl=ko&gl=US)
           <span style="font-size: 1.2rem; font-style: oblique;">신비아파트 뮤지컬 VR 영상 서비스</span>
-          - **main skills: flask, angular, postgresql, aws**
+          - **main skills: flask, angular, postgresql, aws, react-native, celery, redis**
           - 레거시 기반의 CMS 서버 및 어드민 페이지 배포
           - react native 기반의 모바일 앱 UI 기능 추가 및 개선
           
