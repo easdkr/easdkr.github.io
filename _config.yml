@@ -49,10 +49,26 @@ content:
     layout: list
     content:
       - layout: left
+        title: 이젤
+        sub_title: 백엔드 엔지니어
+        link: https://www.eazel.net
+        caption: 2023.04 ~ 현재
+        description: |
+          ## Eazel web site renewal
+         
+          Backend
+          - **main skills: nest.js, typeorm, mysql, aws
+          - WebVR 기반의 유저 아트워크 VR 전시 서비스 api 설계 및 개발
+          - sharp(nodejs) 기반의 on-the-fly image resizing 서버 개발
+          - stripe checkout 기반의 구독 서비스 개발
+          - msk, debezium 기반의 MYSQL CDC 구축
+          - CD pipeline 구축 
+          
+      - layout: left
         title: 알파서클
         sub_title: 솔루션 및 서비스 개발
         link: https://alphacircle.co.kr
-        caption: 2021.01 ~ 현재
+        caption: 2021.01 ~ 2023.03
         description: | # this will include new lines to allow paragraphs
           ## [Vroadway](https://play.google.com/store/apps/details?id=com.alphacircle.vroadway&hl=ko&gl=US&pli=1)
           <span style="font-size: 1.2rem; font-style: oblique;">360 VR 공연/전시 영상 서비스</span>
@@ -106,10 +122,11 @@ content:
       - layout: left
         title: 'Infra'
         description: | # this will include new lines to allow paragraphs
-          - docker, aws ecr, aws ecs
-          - aws ec2, aws alb, aws rds, aws s3
-          - aws route53, aws cloudfront
-          - github action, aws codepipeline, aws codedeploy, aws codebuild
+          - docker, ecs
+          - ec2, alb, rds, elasti cache, msk, s3
+          - route53, certificate manager, cloudfront
+          - github action, codepipeline
+          
       - layout: left
         title: 'Frontend'
         description: | # this will include new lines to allow paragraphs
@@ -119,12 +136,14 @@ content:
           - redux-toolkit
           - storybook/react
           - vite, webpack
+          
       - layout: left
         title: 'Mobile'
         description: |
           - typescript(javascript), jsx(tsx), java, kotlin
           - react native, android native
           - recoil
+          
       - layout: left
         title: 'ECS'
         description: |
