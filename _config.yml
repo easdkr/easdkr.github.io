@@ -118,12 +118,13 @@ content:
           - nest.js
           - typeORM
           - jest, supertest
+          - MySQL, Postgresql
          
       - layout: left
         title: 'Infra'
         description: | # this will include new lines to allow paragraphs
           - docker, ecs
-          - ec2, alb, rds, elasti cache, msk, s3
+          - ec2, alb, rds, elasticache(redis), msk, s3
           - route53, certificate manager, cloudfront
           - github action, codepipeline
           
@@ -145,7 +146,7 @@ content:
           - recoil
           
       - layout: left
-        title: 'ECS'
+        title: 'ETC'
         description: |
           (main skill은 아니지만 운영/스터디를 통해 사용해본 기술입니다.)
           - python3, java, kotlin
