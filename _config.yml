@@ -54,10 +54,10 @@ content:
         link: https://www.eazel.net
         caption: 2023.04 ~ 현재
         description: |
-          ## Eazel web site renewal
+          ## **Eazel web site renewal**
          
           Backend
-          - **main skills: nest.js, typeorm, mysql, aws
+          - **main skills: nest.js, typeorm, mysql, aws**
           - WebVR 기반의 유저 아트워크 VR 전시 서비스 api 설계 및 개발
           - sharp(nodejs) 기반의 on-the-fly image resizing 서버 개발
           - stripe checkout 기반의 구독 서비스 개발
