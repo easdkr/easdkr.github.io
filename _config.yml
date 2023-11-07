@@ -175,7 +175,7 @@ content:
         description: |
           - [clean code (로버트 C. 마틴)](https://github.com/alphacircle-service/clean-code-seminar) 사내 세미나 진행
           - clean architecture (로버트 C. 마틴), Unit Testing (블라디미르 코리코프) 독서 모임 진행 
-          - [만들면서 배우는 헥사고날 아키텍처 설계와 구현(다비 비에이라) with Typescript](https://github.com/easdkr/hexagonal-architecture-with-typescript) 스터디 진행 
+          - [book study](https://github.com/Udangtangtang-Driven-Developer/book-study)
       - layout: left
         title: ETC
         description: |
