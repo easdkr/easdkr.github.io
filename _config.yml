@@ -56,14 +56,14 @@ content:
         description: |
           ## [Eazel web site renewal](https://www.eazel.net)
 
-          **프로젝트 개요** \
-          Ruby on Rails 프레임워크 기반의 기존 웹사이트를 Nest.js 기반의 프레임워크로 마이그레이션 및 신규 기능 통합
+          **프로젝트 개요** 
+          - Ruby on Rails 프레임워크 기반의 기존 웹사이트를 Nest.js 기반의 프레임워크로 마이그레이션 및 신규 기능 통합
           
           **주요 기술** \
-          Nest.js (v9), Typeorm(v0.3) \
-          mysql(v8), postgresql(v13) \
-          Docker \
-          AWS (ECS(Fargate), RDS, S3, Cloudfront, Lambda, Elasticache(Redis), SQS, CodePipeline)
+          - Nest.js (v9), Typeorm(v0.3) 
+          - mysql(v8), postgresql(v13) 
+          - Docker 
+          - AWS (ECS(Fargate), RDS, S3, Cloudfront, Lambda, Elasticache(Redis), SQS, CodePipeline)
           
           **담당 업무**
           
