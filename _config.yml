@@ -9,6 +9,7 @@ version: 2
 name: 최승준
 title: Backend Engineer
 email: choie0423@naver.com
+blog: https://velog.io/@easdkr
 
 # Dark Mode (true/false/never)
 darkmode: false
@@ -59,7 +60,7 @@ content:
           **프로젝트 개요** 
           - Ruby on Rails 프레임워크 기반의 기존 웹사이트를 Nest.js 기반의 프레임워크로 마이그레이션 및 신규 기능 통합
           
-          **주요 기술** \
+          **주요 기술**
           - Nest.js (v9), Typeorm(v0.3) 
           - mysql(v8), postgresql(v13) 
           - Docker 
