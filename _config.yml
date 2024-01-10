@@ -56,47 +56,50 @@ content:
         description: |
           ## [Eazel web site renewal](https://www.eazel.net)
 
-          #### 프로젝트 개요
+          **프로젝트 개요**
           Ruby on Rails 프레임워크 기반의 기존 웹사이트를 Nest.js 기반의 프레임워크로 마이그레이션 및 신규 기능 통합
           
-          #### 주요 기술
-          Nest.js (v9), Typeorm(v0.3), mysql(v8), postgresql(v13),
+          **주요 기술**
+          Nest.js (v9), Typeorm(v0.3)
+          mysql(v8), postgresql(v13)
           Docker
           AWS (ECS(Fargate), RDS, S3, Cloudfront, Lambda, Elasticache(Redis), SQS, CodePipeline)
           
-          #### 담당 업무
-          ##### 팀 작업 구조 개선
+          **담당 업무**
+          
+          <span style="font-size: 1.3rem; text-decoration: underline;">팀 작업 구조 개선</span>
           - 프로젝트 관리를 위해 Jira 도입
           - 협업 효율성 증가를 위해 타 팀과의 의사소통 채널 일원화
           - 작업 시간 단축을 위해 FE / BE 병렬 개발 가능한 프로세스 도입
           
-          ##### 백엔드 프로젝트 구조 개선
+          <span style="font-size: 1.3rem; text-decoration: underline;">백엔드 프로젝트 구조 개선</span>
           - 결합된 비즈니스 로직과 영속성 로직의 점진적 분리
           - Nestjs/swagger 도입, api 명세 자동화를 통해 **문서화 시간 단축**
           - **jest 기반의 유닛 테스트** 점진적 도입
           
-          ##### DB 쿼리 성능 튜닝
+          <span style="font-size: 1.3rem; text-decoration: underline;">DB 쿼리 성능 튜닝</span>
           - 실행 계획 분석을 통해 전체 slow query 인덱스 튜닝 및 쿼리 튜닝 (**응답 시간 최대 92% 개선**)
           
-          ##### [On-the-Fly image resizing 전환](https://velog.io/@easdkr/%EC%9A%B0%EB%8B%B9%ED%83%95%ED%83%95-On-The-Fly-Image-resize-%EC%A0%84%ED%99%98%EA%B8%B0)
-          - 버전 별 이미지를 S3에 업로드하던 구조를 aws lambda, sharp 기반의 **On-the-Fly 이미지 리사이징 서버로 전환**
+          <span style="font-size: 1.3rem; text-decoration: underline;">On-the-Fly image resizing 전환</span>
+          - 버전 별 이미지를 S3에 업로드하던 구조를 aws lambda, sharp 기반의 [On-the-Fly 이미지 리사이징 서버로 전환](https://velog.io/@easdkr/%EC%9A%B0%EB%8B%B9%ED%83%95%ED%83%95-On-The-Fly-Image-resize-%EC%A0%84%ED%99%98%EA%B8%B0)
           - 이미지 처리와 캐시에 저장하는 메커니즘을 실시간으로 전환, 다양한 해상도와 포맷에 대응하는 시스템 구축
           - webp 지원으로 클라이언트에게 응답해야 할 **이미지 용량이 약 20% 감소**
           - 버킷 **저장 공간 약 45~50% 절약** 및 인프라 비용 감소
           
-          ##### CDC pipeline 구축
+          
+          <span style="font-size: 1.3rem; text-decoration: underline;">CDC pipeline 구축</span>
           - Opensearch 기반의 신규 검색 엔진 도입으로 RDBMS (Mysql)와의 데이터 동기화를 위해 Debezium 기반의 CDC pipeline 구축
           
-          ##### Nest.js SetMetadata 기반의 Custom Decorator 개발
+          <span style="font-size: 1.3rem; text-decoration: underline;">Nest.js SetMetadata 기반의 Custom Decorator 개발</span>
           - Cache decorator
           - Fatal error notification decorator
           - Kafka consumer decorator
           
-          ##### 인프라
+          <span style="font-size: 1.3rem; text-decoration: underline;">인프라</span>
           - 서비스 전체 인프라 구성
           - 클라우드 환경(AWS)의 EC2에 수동으로 배포를 진행하던 프로세스를 **AWS Codepipeline, ECS 기반의 Blue / Green 배포 자동화**
           
-          ##### 마이그레이션 및 신규 기능 추가
+          <span style="font-size: 1.3rem; text-decoration: underline;">마이그레이션 및 신규 기능 추가</span>
           - 3D 아트워크 전시 서비스 도메인 설계 및 구현
           - Stripe checkout 기반의 구독 시스템 설계 및 개발, 유료 서비스 연동
           - 로그인 / 회원가입 기능
