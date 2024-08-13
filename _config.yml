@@ -15,8 +15,8 @@ website: https://velog.io/@easdkr
 darkmode: false
 
 # Social links
-github_username:  easdkr
-
+github_username: easdkr
+linkedin_username: seunjune-choi
 # Additional icon links
 # additional_links:
 # - title: Link name
@@ -37,7 +37,7 @@ github_username:  easdkr
 about_profile_image: images/profile.png
 about_content: | # this will include new lines to allow paragraphs
   더 좋은 서비스를 만들기 위해 비즈니스 도메인을 이해하려 노력하고, 나의 성장이 팀의 성장, 더 나아가 더 좋은 서비스의 성장으로 이끌 수 있도록 지속적으로 학습하고 노력하는 백엔드 개발자입니다.
-  
+
   - <span style="font-size: 1.3rem"><span style="text-decoration: underline;">**함께 성장하기 위해 노력하는 사람들과 일하는 것을 좋아합니다.**</span> 나만의 성장보다는 팀 전체가 성장할 수 있도록 지속적으로 사내 스터디를 진행해오고 있습니다.</span>
 
   - <span style="font-size: 1.3rem"><span style="text-decoration: underline;">**더 나은 개발 문화를 만들기 위해 노력합니다.**</span> 
@@ -59,55 +59,55 @@ content:
 
           **프로젝트 개요** 
           - Ruby on Rails 프레임워크 기반의 기존 웹사이트를 Nest.js 기반의 프레임워크로 마이그레이션 및 신규 기능 통합
-          
+
           **주요 기술**
           - Nest.js (v9), Typeorm(v0.3) 
           - mysql(v8), postgresql(v13) 
           - Docker 
           - AWS (ECS(Fargate), RDS, S3, Cloudfront, Lambda, Elasticache(Redis), SQS, CodePipeline)
-          
+
           **담당 업무**
-          
+
           <span style="font-size: 1.3rem; text-decoration: underline;">팀 작업 구조 개선</span>
           - 프로젝트 관리를 위해 Jira 도입
           - 협업 효율성 증가를 위해 타 팀과의 의사소통 채널 일원화
           - 작업 시간 단축을 위해 FE / BE 병렬 개발 가능한 프로세스 도입
-          
+
           <span style="font-size: 1.3rem; text-decoration: underline;">백엔드 프로젝트 구조 개선</span>
           - 결합된 비즈니스 로직과 영속성 로직의 점진적 분리
           - Nestjs/swagger 도입, api 명세 자동화를 통해 **문서화 시간 단축**
           - **jest 기반의 유닛 테스트** 점진적 도입
-          
+
           <span style="font-size: 1.3rem; text-decoration: underline;">DB 쿼리 성능 튜닝</span>
           - 실행 계획 분석을 통해 전체 slow query 인덱스 튜닝 및 쿼리 튜닝 (**응답 시간 최대 92% 개선**)
-          
+
           <span style="font-size: 1.3rem; text-decoration: underline;">On-the-Fly image resizing 전환</span>
           - 버전 별 이미지를 S3에 업로드하던 구조를 aws lambda, sharp 기반의 [On-the-Fly 이미지 리사이징 서버로 전환](https://velog.io/@easdkr/%EC%9A%B0%EB%8B%B9%ED%83%95%ED%83%95-On-The-Fly-Image-resize-%EC%A0%84%ED%99%98%EA%B8%B0)
           - 이미지 처리와 캐시에 저장하는 메커니즘을 실시간으로 전환, 다양한 해상도와 포맷에 대응하는 시스템 구축
           - webp 지원으로 클라이언트에게 응답해야 할 **이미지 용량이 약 20% 감소**
           - 버킷 **저장 공간 약 45~50% 절약** 및 인프라 비용 감소
-          
-          
+
+
           <span style="font-size: 1.3rem; text-decoration: underline;">CDC pipeline 구축</span>
           - Opensearch 기반의 신규 검색 엔진 도입으로 RDBMS (Mysql)와의 데이터 동기화를 위해 Debezium 기반의 CDC pipeline 구축
-          
+
           <span style="font-size: 1.3rem; text-decoration: underline;">Nest.js SetMetadata 기반의 Custom Decorator 개발</span>
           - Cache decorator
           - Fatal error notification decorator
           - Kafka consumer decorator
-          
+
           <span style="font-size: 1.3rem; text-decoration: underline;">인프라</span>
           - 서비스 전체 인프라 구성
           - 클라우드 환경(AWS)의 EC2에 수동으로 배포를 진행하던 프로세스를 **AWS Codepipeline, ECS 기반의 Blue / Green 배포 자동화**
-          
+
           <span style="font-size: 1.3rem; text-decoration: underline;">마이그레이션 및 신규 기능 추가</span>
           - 3D 아트워크 전시 서비스 도메인 설계 및 구현
           - Stripe checkout 기반의 구독 시스템 설계 및 개발, 유료 서비스 연동
           - 로그인 / 회원가입 기능
           - 기존 정보 조회 api 마이그레이션 및 변경
-          
+
           ---
-          
+
       - layout: left
         title: 알파서클
         sub_title: 솔루션 및 서비스 개발
@@ -116,7 +116,7 @@ content:
         description: | # this will include new lines to allow paragraphs
           ## [Vroadway](https://play.google.com/store/apps/details?id=com.alphacircle.vroadway&hl=ko&gl=US&pli=1)
           <span style="font-size: 1.2rem; font-style: oblique;">360 VR 공연/전시 영상 서비스</span>
-          
+
           Backend
           - **main skills: nest.js, typeorm, postgresql, aws** 
           - 개발 생산성 증가를 위해 flask(python) 기반의 백엔드를 nest.js(typescript) 로 마이그레이션
@@ -142,9 +142,9 @@ content:
           - **main skills: flask, angular, postgresql, aws, react-native, celery, redis**
           - 레거시 기반의 CMS 서버 및 어드민 페이지 배포
           - react native 기반의 모바일 앱 UI 기능 추가 및 개선
-          
+
           ---
-          
+
           ## [사내 VR 플레이어 솔루션 개발](https://www.youtube.com/watch?v=JfWsRtJclGk&t=2s)
           <span style="font-size: 1.2rem; font-style: oblique;">360 VR 초고화질 플레이어</span>
           - **main skills: android native(java, kotlin)**
@@ -156,24 +156,24 @@ content:
     layout: list # Type of content section (list/text)
     content:
       - layout: left
-        title: 'Backend'
+        title: "Backend"
         description: | # this will include new lines to allow paragraphs
           - typescript(node.js)
           - nest.js
           - typeORM
           - jest, supertest
           - MySQL, Postgresql
-         
+
       - layout: left
-        title: 'Infra'
+        title: "Infra"
         description: | # this will include new lines to allow paragraphs
           - docker, ecs
           - ec2, alb, rds, elasticache(redis), msk, s3
           - route53, certificate manager, cloudfront
           - github action, codepipeline
-          
+
       - layout: left
-        title: 'Frontend'
+        title: "Frontend"
         description: | # this will include new lines to allow paragraphs
           - typescript(javascript), jsx(tsx)
           - react
@@ -181,22 +181,22 @@ content:
           - redux-toolkit
           - storybook/react
           - vite, webpack
-          
+
       - layout: left
-        title: 'Mobile'
+        title: "Mobile"
         description: |
           - typescript(javascript), jsx(tsx), java, kotlin
           - react native, android native
           - recoil
-          
+
       - layout: left
-        title: 'ETC'
+        title: "ETC"
         description: |
           (main skill은 아니지만 운영/스터디를 통해 사용해본 기술입니다.)
           - python3, java, kotlin
           - flask, angular
           - prisma, flask-sqlalchemy, rxjs, angular/material, styled-component
-          - celery 
+          - celery
 
   - title: Education
     layout: list
@@ -207,13 +207,13 @@ content:
         description: | # this will include new lines to allow paragraphs
           컴퓨터공학과 (학사 졸업)
   - title: Paper
-    layout: text 
-    content: |  
-        [Watch & Do: A Smart IoT Interaction System with Object Detection and Gaze Estimation](https://ieeexplore.ieee.org/document/8634883/)\
-        <span style="font-size: 1.2rem; font-style: oblique; color:#636161;">(IEEE Transactions on Consumer Electronics, Vol 65, Issue 2, May, 2019 (Early Access))</span>
+    layout: text
+    content: |
+      [Watch & Do: A Smart IoT Interaction System with Object Detection and Gaze Estimation](https://ieeexplore.ieee.org/document/8634883/)\
+      <span style="font-size: 1.2rem; font-style: oblique; color:#636161;">(IEEE Transactions on Consumer Electronics, Vol 65, Issue 2, May, 2019 (Early Access))</span>
   - title: A Little More About Me
     layout: list
-    content:  # this will include new lines to allow paragraphs
+    content: # this will include new lines to allow paragraphs
       - layout: left
         title: Study
         description: |
@@ -237,17 +237,18 @@ sass:
   style: compressed
 
 plugins:
- - jekyll-seo-tag
+  - jekyll-seo-tag
 
-exclude : [
-  "Gemfile",
-  "Gemfile.lock",
-  "node_modules",
-  "vendor/bundle/",
-  "vendor/cache/",
-  "vendor/gems/",
-  "vendor/ruby/",
-  "lib/",
-  "scripts/",
-  "docker-compose.yml",
+exclude:
+  [
+    "Gemfile",
+    "Gemfile.lock",
+    "node_modules",
+    "vendor/bundle/",
+    "vendor/cache/",
+    "vendor/gems/",
+    "vendor/ruby/",
+    "lib/",
+    "scripts/",
+    "docker-compose.yml",
   ]
