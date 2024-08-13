@@ -52,10 +52,28 @@ content:
     layout: list
     content:
       - layout: left
+        title: 문토
+        sub_title: 백엔드 엔지니어
+        link: https://munto.kr
+        caption: 2024.03 ~ 현재
+        description: |
+          ## [Munto](https://munto.kr)
+
+          **프로젝트 개요**
+          - 오프라인 모임 플랫폼 서비스 유지보수 및 신규 기능 개발
+
+          **주요 기술**
+          - Nest.js (v8), Prisma(v4)
+          - postgresql(v13), Redis
+          - Docker
+          - AWS (EC2, RDS, S3, Cloudfront, Lambda, Elasticache(Redis)), Github Action
+
+          ---
+      - layout: left
         title: 이젤
         sub_title: 백엔드 엔지니어
         link: https://www.eazel.net
-        caption: 2023.04 ~ 현재
+        caption: 2023.04 ~ 2024.01
         description: |
           ## [Eazel web site renewal](https://www.eazel.net)
 
