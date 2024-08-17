@@ -54,19 +54,30 @@ content:
       - layout: left
         title: 문토
         sub_title: 백엔드 엔지니어
-        link: https://munto.kr
+        link: https://www.munto.kr
         caption: 2024.03 ~ 현재
         description: |
-          ## [Munto](https://munto.kr)
+          ## [Munto](https://www.munto.kr)
 
           **프로젝트 개요**
-          - 오프라인 모임 플랫폼 서비스 유지보수 및 신규 기능 개발
+          - 오프라인 모임 플랫폼 서비스(문토) 유지보수 및 신규 기능 개발
+
+          **담당 업무**
+          - 모임 호스트 리뷰 도메인 설계 및 구현 
+          - 모임 할인 도메인 설계 및 구현
+          - 서비스 모니터링 그라파나 대시보드 쿼리 튜닝 및 개선
+          - 더블 버퍼링을 통한 캐시 타이밍 버그 수정
+          - 거래액 개선 TF
+            - 액션 데이터 기반의 모임 정렬 알고리즘 v1 설계 및 구현
+            - 어뷰징 모임 노출 방지 알고리즘 설계 및 구현
 
           **주요 기술**
-          - Nest.js (v8), Prisma(v4)
-          - postgresql(v13), Redis
+          - Nest.js, Prisma
+          - Jest, Supertest
+          - Postgresql, Redis
+          - Kafka, Bull.js
           - Docker
-          - AWS (EC2, RDS, S3, Cloudfront, Lambda, Elasticache(Redis)), Github Action
+          - AWS(ECS, RDS, Lambda, CloudWatch, Elasticache, MSK), GCP(Pub/Sub), Github Action
 
           ---
       - layout: left
@@ -81,10 +92,12 @@ content:
           - Ruby on Rails 프레임워크 기반의 기존 웹사이트를 Nest.js 기반의 프레임워크로 마이그레이션 및 신규 기능 통합
 
           **주요 기술**
-          - Nest.js (v9), Typeorm(v0.3) 
-          - mysql(v8), postgresql(v13) 
+          - Nest.js, TypeORM 
+          - Jest, Supertest
+          - Mysql, Postgresql, Redis
+          - Kafka, Debezium
           - Docker 
-          - AWS (ECS(Fargate), RDS, S3, Cloudfront, Lambda, Elasticache(Redis), SQS, CodePipeline)
+          - AWS(ECS, ELB, EC2, RDS, S3, Cloudfront, Lambda, Elasticache(Redis), MSK, SQS, CodePipeline)
 
           **담당 업무**
 
@@ -109,7 +122,7 @@ content:
 
 
           <span style="font-size: 1.3rem; text-decoration: underline;">CDC pipeline 구축</span>
-          - Opensearch 기반의 신규 검색 엔진 도입으로 RDBMS (Mysql)와의 데이터 동기화를 위해 Debezium 기반의 CDC pipeline 구축
+          - OpenSearch 기반의 신규 검색 엔진 도입으로 RDBMS (Mysql)와의 데이터 동기화를 위해 Debezium 기반의 CDC pipeline 구축
 
           <span style="font-size: 1.3rem; text-decoration: underline;">Nest.js SetMetadata 기반의 Custom Decorator 개발</span>
           - Cache decorator
