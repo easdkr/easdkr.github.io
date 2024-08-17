@@ -48,6 +48,44 @@ about_content: | # this will include new lines to allow paragraphs
   - <span style="font-size: 1.3rem"><span style="text-decoration: underline;">**사용자의 입장에서 더 나은 서비스를 만들기 위해 노력합니다.**</span>개발만을 위한 오버엔지니어링을 경계하고 사용자의 입장에서 생각하며, 사용자가 더 편리하게 서비스를 이용할 수 있도록 노력합니다.</span>
 
 content:
+  - title: Skills # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: left
+        title: "Backend"
+        description: | # this will include new lines to allow paragraphs
+          - Typescript, Node.js, Nest.js, Python, Flask
+          - Postgresql, MySQL, Redis
+          - TypeORM, Prisma, Flask-SQLAlchemy
+          - Kafka, Bull.js
+          - Jest, Supertest
+
+      - layout: left
+        title: "Infra & DevOps"
+        description: | # this will include new lines to allow paragraphs
+          - Docker, Docker Compose
+          - AWS ECS, AWS ALB, AWS RDS(Aurora), AWS Elasticache(Redis), AWS MSK, AWS SQS
+          - AWS Lambda, AWS CloudWatch, AWS S3, AWS Cloudfront, AWS Route53
+          - AWS CodePipeline
+          - GCP Pub/Sub
+          - Github Action
+          - Serverless Framework
+          - Jira, Github
+
+      - layout: left
+        title: "Frontend"
+        description: | # this will include new lines to allow paragraphs
+          - Typescript, React
+          - Redux-Toolkit
+          - Storybook/React
+          - Vite, Webpack
+
+      - layout: left
+        title: "Mobile"
+        description: |
+          - Typescript, React Native
+          - Java, Kotlin, Android Native
+
   - title: Career
     layout: list
     content:
@@ -58,18 +96,10 @@ content:
         caption: 2024.03 ~ 현재
         description: |
           ## [Munto](https://www.munto.kr)
+          <span style="font-size: 1.2rem; font-style: oblique;">오프라임 모임 플랫폼 서비스</span>
 
           **프로젝트 개요**
-          - 오프라인 모임 플랫폼 서비스(문토) 유지보수 및 신규 기능 개발
-
-          **담당 업무**
-          - 모임 호스트 리뷰 도메인 설계 및 구현 
-          - 모임 할인 도메인 설계 및 구현
-          - 서비스 모니터링 그라파나 대시보드 쿼리 튜닝 및 개선
-          - 더블 버퍼링을 통한 캐시 타이밍 버그 수정
-          - 거래액 개선 TF
-            - 액션 데이터 기반의 모임 정렬 알고리즘 v1 설계 및 구현
-            - 어뷰징 모임 노출 방지 알고리즘 설계 및 구현
+          - 오프라인 모임 플랫폼 서비스 유지보수 및 신규 기능 개발
 
           **주요 기술**
           - Nest.js, Prisma
@@ -78,6 +108,19 @@ content:
           - Kafka, Bull.js
           - Docker
           - AWS(ECS, RDS, Lambda, CloudWatch, Elasticache, MSK), GCP(Pub/Sub), Github Action
+          - Jira, Github
+
+          **담당 업무**
+          - 모임 호스트 리뷰 도메인 설계 및 구현 
+          - 모임 할인 도메인 설계 및 구현
+          - 서비스 모니터링 그라파나 대시보드 쿼리 튜닝 및 인덱스 튜닝
+          - `캐시 구조 개선` 및 오래된 캐시 타이밍 버그 개선 
+          - Jest와 Supertest 기반의 unit, e2e 테스트 도입
+          - **거래액 개선 Task Force 백엔드 담당**
+            - 액션 데이터 기반의 `모임 정렬 알고리즘` v1 설계 및 구현
+            - 어뷰징 모임 노출 방지 알고리즘 설계 및 구현
+            - 모임 리스트 아이템 UI 개선
+            - 모임 취소 유저 경험 개선
 
           ---
       - layout: left
@@ -86,10 +129,11 @@ content:
         link: https://www.eazel.net
         caption: 2023.04 ~ 2024.01
         description: |
-          ## [Eazel web site renewal](https://www.eazel.net)
+          ## [Eazel Renewal](https://www.eazel.net)
+          <span style="font-size: 1.2rem; font-style: oblique;">미술/전시 컨텐츠 및 구독형 미술품 옥션 정보 제공 서비스</span>
 
           **프로젝트 개요** 
-          - Ruby on Rails 프레임워크 기반의 기존 웹사이트를 Nest.js 기반의 프레임워크로 마이그레이션 및 신규 기능 통합
+          - Eazel 서비스 리뉴얼
 
           **주요 기술**
           - Nest.js, TypeORM 
@@ -97,73 +141,51 @@ content:
           - Mysql, Postgresql, Redis
           - Kafka, Debezium
           - Docker 
-          - AWS(ECS, ELB, EC2, RDS, S3, Cloudfront, Lambda, Elasticache(Redis), MSK, SQS, CodePipeline)
+          - AWS(ECS, ELB, EC2, RDS, S3, Cloudfront, Lambda, Elasticache(Redis), MSK, SQS, CodePipeline), Github Action
+          - Jira, Github
 
           **담당 업무**
-
-          <span style="font-size: 1.3rem; text-decoration: underline;">팀 작업 구조 개선</span>
-          - 프로젝트 관리를 위해 Jira 도입
-          - 협업 효율성 증가를 위해 타 팀과의 의사소통 채널 일원화
-          - 작업 시간 단축을 위해 FE / BE 병렬 개발 가능한 프로세스 도입
-
-          <span style="font-size: 1.3rem; text-decoration: underline;">백엔드 프로젝트 구조 개선</span>
-          - 결합된 비즈니스 로직과 영속성 로직의 점진적 분리
-          - Nestjs/swagger 도입, api 명세 자동화를 통해 **문서화 시간 단축**
-          - **jest 기반의 유닛 테스트** 점진적 도입
-
-          <span style="font-size: 1.3rem; text-decoration: underline;">DB 쿼리 성능 튜닝</span>
-          - 실행 계획 분석을 통해 전체 slow query 인덱스 튜닝 및 쿼리 튜닝 (**응답 시간 최대 92% 개선**)
-
-          <span style="font-size: 1.3rem; text-decoration: underline;">On-the-Fly image resizing 전환</span>
-          - 버전 별 이미지를 S3에 업로드하던 구조를 aws lambda, sharp 기반의 [On-the-Fly 이미지 리사이징 서버로 전환](https://velog.io/@easdkr/%EC%9A%B0%EB%8B%B9%ED%83%95%ED%83%95-On-The-Fly-Image-resize-%EC%A0%84%ED%99%98%EA%B8%B0)
-          - 이미지 처리와 캐시에 저장하는 메커니즘을 실시간으로 전환, 다양한 해상도와 포맷에 대응하는 시스템 구축
-          - webp 지원으로 클라이언트에게 응답해야 할 **이미지 용량이 약 20% 감소**
-          - 버킷 **저장 공간 약 45~50% 절약** 및 인프라 비용 감소
-
-
-          <span style="font-size: 1.3rem; text-decoration: underline;">CDC pipeline 구축</span>
-          - OpenSearch 기반의 신규 검색 엔진 도입으로 RDBMS (Mysql)와의 데이터 동기화를 위해 Debezium 기반의 CDC pipeline 구축
-
-          <span style="font-size: 1.3rem; text-decoration: underline;">Nest.js SetMetadata 기반의 Custom Decorator 개발</span>
-          - Cache decorator
-          - Fatal error notification decorator
-          - Kafka consumer decorator
-
-          <span style="font-size: 1.3rem; text-decoration: underline;">인프라</span>
-          - 서비스 전체 인프라 구성
-          - 클라우드 환경(AWS)의 EC2에 수동으로 배포를 진행하던 프로세스를 **AWS Codepipeline, ECS 기반의 Blue / Green 배포 자동화**
-
-          <span style="font-size: 1.3rem; text-decoration: underline;">마이그레이션 및 신규 기능 추가</span>
-          - 3D 아트워크 전시 서비스 도메인 설계 및 구현
-          - Stripe checkout 기반의 구독 시스템 설계 및 개발, 유료 서비스 연동
-          - 로그인 / 회원가입 기능
-          - 기존 정보 조회 api 마이그레이션 및 변경
+          - Ruby on Rails 기반의 서비스를 Nest.js로 마이그레이션
+          - 백엔드 아키텍처 설계 및 구현
+          - AOP 라이브러리 구현 (캐싱, 로깅, 트랜잭션)
+          - DB 인덱스 튜닝 및 쿼리 튜닝
+          - on-the-Fly image 관리 시스템 설계 및 구현
+          - Jest와 Supertest 기반의 unit, e2e 테스트 도입
+          - CDC pipeline 구축
+          - AWS 기반의 서비스 아키텍처 구축
+          - AWS Codepipeline, Github action 기반의 배포 자동화 파이프라인 구축 
+          - Stripe checkout 기반의 구독 시스템 설계 및 개발
+          - 팀 워크 프로세스 개선
 
           ---
 
       - layout: left
         title: 알파서클
-        sub_title: 솔루션 및 서비스 개발
+        sub_title: 솔루션 및 서비스 엔지니어
         link: https://alphacircle.co.kr
         caption: 2021.01 ~ 2023.03
         description: | # this will include new lines to allow paragraphs
-          ## [Vroadway](https://play.google.com/store/apps/details?id=com.alphacircle.vroadway&hl=ko&gl=US&pli=1)
-          <span style="font-size: 1.2rem; font-style: oblique;">360 VR 공연/전시 영상 서비스</span>
+          ## [Vroadway Renewal](https://play.google.com/store/apps/details?id=com.alphacircle.vroadway&hl=ko&gl=US&pli=1)
+          <span style="font-size: 1.2rem; font-style: oblique;">공연/전시 360 VR 영상 서비스</span>
 
-          Backend
-          - **main skills: nest.js, typeorm, postgresql, aws** 
-          - 개발 생산성 증가를 위해 flask(python) 기반의 백엔드를 nest.js(typescript) 로 마이그레이션
-          - 서비스 확장을 염두한 개선 아키텍처 설계
+          **프로젝트 개요** 
+          - Vroadway 서비스 리뉴얼
+
+          **주요 기술**
+          - Nest.js, TypeORM 
+          - Jest, Supertest
+          - Postgresql, Redis
+          - Docker 
+          - AWS(ECS, ELB, EC2, RDS, S3, Cloudfront, Elasticache(Redis), CodePipeline)
+          - React, Redux
+          - Github, Github Action, Github Project
+
+          **담당 업무**
+          - Flask 기반의 백엔드 애플리케이션을 `Nest.js로 마이그레이션`
+          - Angular 기반의 어드민을 `React 로 마이그레이션`
+          - React Native 기반의 모바일 앱 UI 기능 추가 및 개선
+          - 전체 서비스 아키텍처 설계
           - jest와 supertest 기반의 unit, e2e 테스트 도입
-          - github action 기반의 CI pipeline 구축
-          - aws code pipeline과 ECS 기반의 CD pipeline 구축
-          - database entity 구조 개선
-
-          Frontend
-          - **main skills: react, MUI, redux-toolkit**
-          - 개발 생산성 증가를 위해 Angular(Typescript) 기반의 어드민을 React(Typescript) 로 마이그레이션
-          - 재사용성을 위한 컴포넌트 구조 설계 및 개발
-          - 컴포넌트 기반 개발을 위한 storybook 도입
 
           참고
           - [vroadway-v2 회고](https://github.com/easdkr/Vroadway-v2-api-server-retrospect)
@@ -172,64 +194,36 @@ content:
 
           ## [신비아파트 VR뮤지컬](https://play.google.com/store/apps/details?id=com.shinbimusicalwadiz&hl=ko&gl=US)
           <span style="font-size: 1.2rem; font-style: oblique;">신비아파트 뮤지컬 VR 영상 서비스</span>
-          - **main skills: flask, angular, postgresql, aws, react-native, celery, redis**
-          - 레거시 기반의 CMS 서버 및 어드민 페이지 배포
+
+          **프로젝트 개요**
+          - 신비아파트 뮤지컬 VR 영상 서비스 유지보수 및 신규 기능 개발
+
+          **주요 기술** 
+          - Flask, SQLAlchemy, Celery
+          - Postgresql, Redis
+          - Angular
+          - React Native
+
+          **담당 업무**
+          - CMS 서버 및 어드민 페이지 배포
           - react native 기반의 모바일 앱 UI 기능 추가 및 개선
 
           ---
 
           ## [사내 VR 플레이어 솔루션 개발](https://www.youtube.com/watch?v=JfWsRtJclGk&t=2s)
           <span style="font-size: 1.2rem; font-style: oblique;">360 VR 초고화질 플레이어</span>
-          - **main skills: android native(java, kotlin)**
-          - android exoplayer codec library 기반의 **코덱 호환 검증 및 해상도 검증 자동화 라이브러리** 개발
-          - 구 버전의 exoplayer 기반의 레거시 솔루션을 신규 버전의 exoplayer 로 마이그레이션 및 개선 
-          - 확장이 힘들었던 레거시 솔루션 코드를 다형성 기반의 코드로 변경하여 확장에 용이하도록 개선
 
-  - title: Skills # Title for the section
-    layout: list # Type of content section (list/text)
-    content:
-      - layout: left
-        title: "Backend"
-        description: | # this will include new lines to allow paragraphs
-          - typescript(node.js)
-          - nest.js
-          - typeORM
-          - jest, supertest
-          - MySQL, Postgresql
+          **프로젝트 개요**
+          - 알파뷰 솔루션 유지보수 및 고도화
 
-      - layout: left
-        title: "Infra"
-        description: | # this will include new lines to allow paragraphs
-          - docker, ecs
-          - ec2, alb, rds, elasticache(redis), msk, s3
-          - route53, certificate manager, cloudfront
-          - github action, codepipeline
+          **주요 기술** 
+          - Android Native (java, kotlin)
+          - ExoPlayer
 
-      - layout: left
-        title: "Frontend"
-        description: | # this will include new lines to allow paragraphs
-          - typescript(javascript), jsx(tsx)
-          - react
-          - MUI
-          - redux-toolkit
-          - storybook/react
-          - vite, webpack
-
-      - layout: left
-        title: "Mobile"
-        description: |
-          - typescript(javascript), jsx(tsx), java, kotlin
-          - react native, android native
-          - recoil
-
-      - layout: left
-        title: "ETC"
-        description: |
-          (main skill은 아니지만 운영/스터디를 통해 사용해본 기술입니다.)
-          - python3, java, kotlin
-          - flask, angular
-          - prisma, flask-sqlalchemy, rxjs, angular/material, styled-component
-          - celery
+          **담당 업무**
+          - android exoplayer codec library 기반의 `코덱 호환 검증 및 해상도 검증 자동화 라이브러리` 개발
+          - 신규 버전의 exoplayer 로 마이그레이션 및 개선 
+          - 레거시 솔루션 코드를 다형성 기반의 코드로 변경
 
   - title: Education
     layout: list
@@ -251,7 +245,6 @@ content:
         title: Study
         description: |
           - [clean code (로버트 C. 마틴)](https://github.com/alphacircle-service/clean-code-seminar) 사내 세미나 진행
-          - clean architecture (로버트 C. 마틴), Unit Testing (블라디미르 코리코프) 독서 모임 진행 
           - [book study](https://github.com/Udangtangtang-Driven-Developer/book-study)
       - layout: left
         title: ETC
