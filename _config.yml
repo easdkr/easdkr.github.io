@@ -146,15 +146,15 @@ content:
 
           **담당 업무**
           - Ruby on Rails 기반의 서비스를 Nest.js로 마이그레이션
-          - 백엔드 아키텍처 설계 및 구현
+          - `백엔드 아키텍처 설계 및 구현`
           - AOP 라이브러리 구현 (캐싱, 로깅, 트랜잭션)
+          - on-the-Fly image 시스템 설계 및 구현
+          - Stripe 기반의 구독 시스템 설계 및 개발
           - DB 인덱스 튜닝 및 쿼리 튜닝
-          - on-the-Fly image 관리 시스템 설계 및 구현
           - Jest와 Supertest 기반의 unit, e2e 테스트 도입
           - CDC pipeline 구축
           - AWS 기반의 서비스 아키텍처 구축
           - AWS Codepipeline, Github action 기반의 배포 자동화 파이프라인 구축 
-          - Stripe checkout 기반의 구독 시스템 설계 및 개발
           - 팀 워크 프로세스 개선
 
           ---
